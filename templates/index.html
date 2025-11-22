@@ -1,0 +1,370 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-carousel">
+    <div class="carousel-slide active">
+        <img src="{{ url_for('static', filename='images/hero/Luxury_wedding_ceremony_scene_84d32d0f.png') }}" alt="Luxury Wedding">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Elegant_engagement_celebration_27fbfcf4.png') }}" alt="Engagement">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Festive_birthday_party_241cd6a8.png') }}" alt="Birthday Party">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Anniversary_dinner_celebration_0619a5bb.png') }}" alt="Anniversary">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Baby_shower_celebration_81bff33f.png') }}" alt="Baby Shower">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Destination_beach_wedding_fc1e971d.png') }}" alt="Destination Wedding">
+        <div class="carousel-overlay"></div>
+    </div>
+    <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='images/hero/Corporate_event_conference_9968315e.png') }}" alt="Corporate Event">
+        <div class="carousel-overlay"></div>
+    </div>
+    
+    <div class="carousel-content">
+        <h1>Kailara Creations</h1>
+        <p>Crafting Moments, Creating Memories</p>
+        <div class="carousel-buttons">
+            <a href="/contact" class="btn-primary">Book Now</a>
+            <a href="/packages" class="btn-secondary">View Packages</a>
+        </div>
+    </div>
+</div>
+
+<section class="services">
+    <div class="section-header">
+        <h2>Our Services</h2>
+        <p>We specialize in creating unforgettable experiences for every occasion</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card" onclick="location.href='/services/weddings'">
+            <img src="{{ url_for('static', filename='images/hero/Luxury_wedding_ceremony_scene_84d32d0f.png') }}" alt="Weddings">
+            <div class="service-card-content">
+                <h3>Weddings & Engagements</h3>
+                <p>Make your special day truly magical with our premium wedding planning services</p>
+                <a href="/services/weddings" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card" onclick="location.href='/services/corporate'">
+            <img src="{{ url_for('static', filename='images/hero/Corporate_event_conference_9968315e.png') }}" alt="Corporate Events">
+            <div class="service-card-content">
+                <h3>Corporate Events</h3>
+                <p>Professional event management for conferences, seminars, and business celebrations</p>
+                <a href="/services/corporate" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card" onclick="location.href='/services/parties'">
+            <img src="{{ url_for('static', filename='images/hero/Festive_birthday_party_241cd6a8.png') }}" alt="Private Parties">
+            <div class="service-card-content">
+                <h3>Private Parties</h3>
+                <p>Celebrate life's milestones with beautifully curated birthday and private parties</p>
+                <a href="/services/parties" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card" onclick="location.href='/services/concerts'">
+            <img src="{{ url_for('static', filename='images/services/concert.png') }}" alt="Concerts">
+            <div class="service-card-content">
+                <h3>Concerts & Festivals</h3>
+                <p>Large-scale event production for concerts, festivals, and entertainment shows</p>
+                <a href="/services/concerts" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card" onclick="location.href='/services/destination'">
+            <img src="{{ url_for('static', filename='images/hero/Destination_beach_wedding_fc1e971d.png') }}" alt="Destination Events">
+            <div class="service-card-content">
+                <h3>Destination Events</h3>
+                <p>Exotic location events and destination weddings in paradise settings</p>
+                <a href="/services/destination" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card" onclick="location.href='/services/weddings'">
+            <img src="{{ url_for('static', filename='images/hero/Anniversary_dinner_celebration_0619a5bb.png') }}" alt="Anniversaries">
+            <div class="service-card-content">
+                <h3>Anniversary Celebrations</h3>
+                <p>Romantic and elegant celebrations to honor love and commitment</p>
+                <a href="/services/weddings" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <div class="section-header">
+        <h2>Why Choose Us</h2>
+        <p>Excellence in every detail of your celebration</p>
+    </div>
+    
+    <div class="why-grid">
+        <div class="why-item">
+            <i class="fas fa-crown"></i>
+            <h3>Professional & Elegant</h3>
+            <p>Sophisticated planning with meticulous attention to detail</p>
+        </div>
+        
+        <div class="why-item">
+            <i class="fas fa-palette"></i>
+            <h3>Modern & Youthful</h3>
+            <p>Contemporary designs that reflect current trends and your personality</p>
+        </div>
+        
+        <div class="why-item">
+            <i class="fas fa-gem"></i>
+            <h3>Luxury & Premium</h3>
+            <p>High-end services and exclusive partnerships for an opulent experience</p>
+        </div>
+        
+        <div class="why-item">
+            <i class="fas fa-heart"></i>
+            <h3>Friendly & Creative</h3>
+            <p>Warm, personalized service with innovative and unique ideas</p>
+        </div>
+        
+        <div class="why-item">
+            <i class="fas fa-briefcase"></i>
+            <h3>Corporate-Focused</h3>
+            <p>Professional event management tailored for business needs</p>
+        </div>
+    </div>
+</section>
+
+<section class="before-after-section">
+    <div class="section-header">
+        <h2>Before & After Transformations</h2>
+        <p>Witness the magic of our event transformations</p>
+    </div>
+    
+    <div class="before-after">
+        <div class="before-after-item">
+            <img src="{{ url_for('static', filename='images/gallery/before.png') }}" alt="Before">
+            <div class="label">BEFORE</div>
+        </div>
+        <div class="before-after-item">
+            <img src="{{ url_for('static', filename='images/gallery/after.png') }}" alt="After">
+            <div class="label">AFTER</div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <div class="section-header">
+        <h2>Theme-Based Galleries</h2>
+        <p>Explore our diverse event themes and styles</p>
+    </div>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery/floral.png') }}" alt="Floral Theme">
+            <div class="gallery-overlay">
+                <h3>Floral Theme</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery/modern.png') }}" alt="Modern Theme">
+            <div class="gallery-overlay">
+                <h3>Modern Theme</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery/royal.png') }}" alt="Royal Theme">
+            <div class="gallery-overlay">
+                <h3>Royal Theme</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery/beach.png') }}" alt="Beach Theme">
+            <div class="gallery-overlay">
+                <h3>Beach Theme</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery/traditional.png') }}" alt="Traditional Theme">
+            <div class="gallery-overlay">
+                <h3>Traditional Theme</h3>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/services/wedding.png') }}" alt="Elegant Setup">
+            <div class="gallery-overlay">
+                <h3>Elegant Setup</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="section-header">
+        <h2>Client Testimonials</h2>
+        <p>Hear what our happy clients have to say</p>
+    </div>
+    
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/testimonials/client1.png') }}" alt="Client 1">
+            <div class="stars">★★★★★</div>
+            <p>"Kailara Creations made our wedding absolutely magical! Every detail was perfect, and the team was professional and attentive throughout."</p>
+            <h4>Priya & Rahul</h4>
+        </div>
+        
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/testimonials/client2.png') }}" alt="Client 2">
+            <div class="stars">★★★★★</div>
+            <p>"Outstanding corporate event management! Our annual conference was flawlessly executed. Highly recommend their services."</p>
+            <h4>Jayaprakash Morusu</h4>
+        </div>
+        
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/testimonials/client3.png') }}" alt="Client 3">
+            <div class="stars">★★★★★</div>
+            <p>"The destination wedding they planned for us was beyond our dreams. Thank you for creating memories that will last forever!"</p>
+            <h4>Ananya & Rajesh</h4>
+        </div>
+    </div>
+</section>
+
+<section class="packages-section">
+    <div class="section-header">
+        <h2>Our Packages</h2>
+        <p>Choose the perfect package for your celebration</p>
+    </div>
+    
+    <div class="packages-grid">
+        <div class="package-card">
+            <h3>Standard</h3>
+            <div class="package-price">Simple,clean,trustworthy</div>
+            <ul class="package-features">
+                <li>Basic Event Planning</li>
+                <li>Venue Coordination</li>
+                <li>Standard Decorations</li>
+                <li>Photography (4 hours)</li>
+                <li>Basic Catering Setup</li>
+            </ul>
+            <a href="/packages" class="btn-primary">Choose Plan</a>
+        </div>
+        
+        <div class="package-card featured">
+            <h3>Premium</h3>
+            <div class="package-price">Sounds upgraded and professional</div>
+            <ul class="package-features">
+                <li>Complete Event Planning</li>
+                <li>Premium Venue Selection</li>
+                <li>Luxury Decorations</li>
+                <li>Photography & Videography</li>
+                <li>Premium Catering</li>
+                <li>Entertainment Coordination</li>
+            </ul>
+            <a href="/packages" class="btn-primary">Choose Plan</a>
+        </div>
+        
+        <div class="package-card">
+            <h3>Luxury</h3>
+            <div class="package-price">High-end and classy</div>
+            <ul class="package-features">
+                <li>All-Inclusive Premium Planning</li>
+                <li>Exclusive Venue Access</li>
+                <li>Bespoke Luxury Decorations</li>
+                <li>Full Production Team</li>
+                <li>Gourmet Catering</li>
+                <li>Celebrity Entertainment</li>
+                <li>Destination Coordination</li>
+            </ul>
+            <a href="/packages" class="btn-primary">Choose Plan</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's start planning your unforgettable event</p>
+    </div>
+    
+    <div class="contact-grid">
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="event_type">Event Type</label>
+                    <select id="event_type" name="event_type" required>
+                        <option value="">Select Event Type</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="engagement">Engagement</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="birthday">Birthday Party</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="destination">Destination Event</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="event_date">Preferred Event Date</label>
+                    <input type="date" id="event_date" name="event_date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91-70956 80956</p>
+                </div>
+            </div>
+            
+            <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>kailaracreationz@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Tirupati, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

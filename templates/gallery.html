@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - Kailara Creations{% endblock %}
+
+{% block content %}
+<div style="padding-top: 100px; min-height: 100vh;">
+    <section class="gallery-section">
+        <div class="section-header">
+            <h2>Our Gallery</h2>
+            <p>Explore our portfolio of stunning events</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery/floral.png') }}" alt="Floral Theme">
+                <div class="gallery-overlay">
+                    <h3>Floral Theme</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery/modern.png') }}" alt="Modern Theme">
+                <div class="gallery-overlay">
+                    <h3>Modern Theme</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery/royal.png') }}" alt="Royal Theme">
+                <div class="gallery-overlay">
+                    <h3>Royal Theme</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery/beach.png') }}" alt="Beach Theme">
+                <div class="gallery-overlay">
+                    <h3>Beach Theme</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery/traditional.png') }}" alt="Traditional Theme">
+                <div class="gallery-overlay">
+                    <h3>Traditional Theme</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/services/wedding.png') }}" alt="Wedding Setup">
+                <div class="gallery-overlay">
+                    <h3>Wedding Setup</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/hero/Luxury_wedding_ceremony_scene_84d32d0f.png') }}" alt="Luxury Wedding">
+                <div class="gallery-overlay">
+                    <h3>Luxury Wedding</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/hero/Destination_beach_wedding_fc1e971d.png') }}" alt="Beach Wedding">
+                <div class="gallery-overlay">
+                    <h3>Beach Wedding</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

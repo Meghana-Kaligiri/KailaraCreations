@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Packages - Kailara Creations{% endblock %}
+
+{% block content %}
+<div style="padding-top: 100px; min-height: 100vh;">
+    <section class="packages-section">
+        <div class="section-header">
+            <h2>Our Packages</h2>
+            <p>Choose the perfect package for your celebration</p>
+        </div>
+        
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3>Standard</h3>
+                <div class="package-price">Simple, clean, trustworthy</div>
+                <ul class="package-features">
+                    <li>Basic Event Planning</li>
+                    <li>Venue Coordination</li>
+                    <li>Standard Decorations</li>
+                    <li>Photography (4 hours)</li>
+                    <li>Basic Catering Setup</li>
+                    <li>Event Day Coordination</li>
+                </ul>
+                <a href="/contact" class="btn-primary">Choose Plan</a>
+            </div>
+            
+            <div class="package-card featured">
+                <h3>Premium</h3>
+                <div class="package-price">Sounds upgraded and professional</div>
+                <ul class="package-features">
+                    <li>Complete Event Planning</li>
+                    <li>Premium Venue Selection</li>
+                    <li>Luxury Decorations</li>
+                    <li>Photography & Videography</li>
+                    <li>Premium Catering</li>
+                    <li>Entertainment Coordination</li>
+                    <li>Guest Management</li>
+                    <li>Custom Invitations</li>
+                </ul>
+                <a href="/contact" class="btn-primary">Choose Plan</a>
+            </div>
+            
+            <div class="package-card">
+                <h3>Luxury</h3>
+                <div class="package-price">High-end and classy</div>
+                <ul class="package-features">
+                    <li>All-Inclusive Premium Planning</li>
+                    <li>Exclusive Venue Access</li>
+                    <li>Bespoke Luxury Decorations</li>
+                    <li>Full Production Team</li>
+                    <li>Gourmet Catering</li>
+                    <li>Celebrity Entertainment</li>
+                    <li>Destination Coordination</li>
+                    <li>Personal Event Manager</li>
+                    <li>Unlimited Customization</li>
+                </ul>
+                <a href="/contact" class="btn-primary">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
