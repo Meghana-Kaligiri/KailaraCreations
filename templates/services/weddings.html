@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Weddings & Engagements - Kailara Creations{% endblock %}
+
+{% block content %}
+<div style="padding-top: 100px; min-height: 100vh;">
+    <section style="padding: 5rem 5%;">
+        <div class="section-header">
+            <h2>Weddings & Engagements</h2>
+            <p>Creating magical moments for your special day</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+            <div>
+                <img src="{{ url_for('static', filename='images/hero/Luxury_wedding_ceremony_scene_84d32d0f.png') }}" alt="Wedding" style="width: 100%; border-radius: 15px;">
+            </div>
+            <div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">Your Dream Wedding Awaits</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    From intimate ceremonies to grand celebrations, we bring your wedding vision to life with meticulous attention to detail and creative excellence.
+                </p>
+                
+                <h4 style="margin: 2rem 0 1rem;">Services Include:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Complete Wedding Planning</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Venue Selection & Decoration</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Catering & Menu Design</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Photography & Videography</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Entertainment & Music</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Guest Management</li>
+                </ul>
+                
+                <a href="/contact" class="btn-primary" style="margin-top: 2rem;">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

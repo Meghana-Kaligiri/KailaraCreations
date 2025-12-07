@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Private Parties - Kailara Creations{% endblock %}
+
+{% block content %}
+<div style="padding-top: 100px; min-height: 100vh;">
+    <section style="padding: 5rem 5%;">
+        <div class="section-header">
+            <h2>Private Parties</h2>
+            <p>Celebrate life's special moments in style</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+            <div>
+                <img src="{{ url_for('static', filename='images/hero/Festive_birthday_party_241cd6a8.png') }}" alt="Private Party" style="width: 100%; border-radius: 15px;">
+            </div>
+            <div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">Unforgettable Private Celebrations</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    From birthday parties to anniversaries, we create personalized celebrations that reflect your unique style and vision.
+                </p>
+                
+                <h4 style="margin: 2rem 0 1rem;">Services Include:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Birthday Parties</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Anniversary Celebrations</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Baby Showers</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Theme Parties</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Milestone Celebrations</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Surprise Parties</li>
+                </ul>
+                
+                <a href="/contact" class="btn-primary" style="margin-top: 2rem;">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

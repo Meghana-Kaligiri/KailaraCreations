@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Corporate Events - Kailara Creations{% endblock %}
+
+{% block content %}
+<div style="padding-top: 100px; min-height: 100vh;">
+    <section style="padding: 5rem 5%;">
+        <div class="section-header">
+            <h2>Corporate Events</h2>
+            <p>Professional event management for business success</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+            <div class="service-carousel">
+                <div class="service-slide active">
+                    <img src="{{ url_for('static', filename='images/services/corporate_new.png') }}"
+                        alt="Corporate Event 1">
+                </div>
+                <div class="service-slide">
+                    <img src="{{ url_for('static', filename='images/services/corporate_1.png') }}"
+                        alt="Corporate Event 2">
+                </div>
+                <div class="service-slide">
+                    <img src="{{ url_for('static', filename='images/services/corporate_2.png') }}"
+                        alt="Corporate Event 3">
+                </div>
+
+                <button class="carousel-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">Elevate Your Corporate Events</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    Professional event management for conferences, seminars, product launches, and corporate
+                    celebrations that leave a lasting impression.
+                </p>
+
+                <h4 style="margin: 2rem 0 1rem;">Services Include:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Conference Planning
+                    </li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Venue & AV Setup</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Team Building Events
+                    </li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Product Launches</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Corporate Parties</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">✓ Branding & Marketing
+                        Support</li>
+                </ul>
+
+                <a href="/contact" class="btn-primary" style="margin-top: 2rem;">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
